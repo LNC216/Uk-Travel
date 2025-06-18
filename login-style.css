@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48pt;
+  line-height: 1.2;
+  color: #b8562e;
+}
+
+.body {
+    font-family: "PT Serif", serif;
+   background: url(cta\ 1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    height: 600px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.left {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #d63c10;
+    font-family: "Bebas Neue", sans-serif;
+}
+.left p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn-outline {
+    padding: 10px 25px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+.right {
+    width: 50%;
+    background: rgba(255, 255, 255,0.85);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h3 {
+    color: #d63c10;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.login-box input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d63c10;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-footer a {
+    color: #d63c10;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+.form-footer button {
+    background: transparent;
+    color: #d63c10;
+    border: 1px solid #d63c10;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-footer button:hover {
+    background: #d63c10;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    .left, .right {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+        .form-footer {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
